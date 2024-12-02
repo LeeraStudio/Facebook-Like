@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link
+      rel="shortcut icon"
+      href="Images/Screenshot_20241011-025145.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    .container {
+      background-color: #eee;
+      display: flex;
+    }
+
+    .container .left-panel {
+      display: block;
+      width: 95%;
+      position: sticky;
+      top: 70px;
+      height: calc(100vh - 70px);
+    }
+
+    .container .left-panel ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 20px;
+    }
+
+    .container .left-panel ul li {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 200;
+      align-items: center;
+      transition: 0.3s;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container .left-panel ul li i {
+      margin: 0.5rem 0.8rem;
+      padding: 1.4rem 0;
+    }
+
+    .container .left-panel ul li > p {
+      margin: 9px;
+      font-size: 14px;
+    }
+
+    .container .left-panel ul li > i {
+      font-size: 16px;
+      color: slateblue;
+    }
+
+    .container .left-panel .footer-links {
+      padding: 4px 1.15rem;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="Images/Screenshot_20241011-025145.jpg" alt="Facebook Logo" />
+        <input type="text" placeholder="Search Facebook..." />
+      </div>
+
+      <div class="nav-middle">
+        <a href="index.html" class="active">
+          <i class="fa fa-home"></i>
+        </a>
+
+        <a href="friend.html">
+          <i class="fa fa-user-plus"></i>
+        </a>
+
+        <a href="video.html">
+          <i class="fa fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-users"></i>
+        </a>
+      </div>
+      <div class="nav-right">
+        <span class="profile"></span>
+
+        <a href="#">
+          <i class="fa fa-bell"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-ellipsis-h"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section class="second-navbar">
+      <div class="nav-second">
+        <a href="index.html">
+          <i class="fa fa-home"></i>
+        </a>
+
+        <a href="friend.html">
+          <i class="fa fa-user-plus"></i>
+        </a>
+
+        <a href="video.html">
+          <i class="fa fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa fa-users"></i>
+        </a>
+
+        <a href="leftPanel.html" class="active">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- <a href="#"><i class="fa fa-bars"></i></a> -->
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="left-panel">
+        <ul>
+          <li onclick="changeName()">
+            <span class="profile"></span>
+            <p class="name" id="newName">User's Name</p>
+          </li>
+          <li>
+            <i class="fa fa-user-plus"></i>
+            <p class="name">Friends</p>
+          </li>
+          <li>
+            <i class="fa fa-play-circle"></i>
+            <p class="name">Videos</p>
+          </li>
+          <li>
+            <i class="fa fa-flag"></i>
+            <p class="name">Pages</p>
+          </li>
+          <li>
+            <i class="fa fa-users"></i>
+            <p class="name">Groups</p>
+          </li>
+          <li>
+            <i class="fa fa-bookmark"></i>
+            <p class="name">Bookmark</p>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <p class="name">Inbox</p>
+          </li>
+          <li>
+            <i class="fa fa-calendar"></i>
+            <p class="name">Events</p>
+          </li>
+          <li>
+            <i class="fa fa-bullhorn"></i>
+            <p class="name">Ads</p>
+          </li>
+          <li>
+            <i class="fa fa-handshake-o"></i>
+            <p class="name">Offers</p>
+          </li>
+          <li>
+            <i class="fa fa-briefcase"></i>
+            <p class="name">Jobs</p>
+          </li>
+          <li>
+            <i class="fa fa-star"></i>
+            <p class="name">Favourites</p>
+          </li>
+        </ul>
+
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Advanced</a>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
